@@ -18,6 +18,7 @@
   "dependencies": {
     "@atproto/api": "0.16.7",
     "@modelcontextprotocol/sdk": "1.29.0",
+    "@sentry/node": "10.75.3",
     "express": "5.1.0",
     "zod": "3.24.2"
   },

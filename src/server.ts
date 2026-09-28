@@ -5,6 +5,7 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
 
+import { initCrashReporting } from "./crash.js";
 import { SERVICE_ICON } from "./icon.js";
 
 const SERVICE_NAME = "bluesky-mcp";
@@ -148,6 +149,7 @@ export function createApp() {
 }
 
 export function startServer() {
+  initCrashReporting();
   const listener = createApp().listen(PORT, HOST, () => console.log(`${SERVICE_NAME} listening`));
   let closing = false;
   const shutdown = () => {
