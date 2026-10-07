@@ -1,5 +1,6 @@
 [tool.agentic-os.repo-pointer-skills]
-org = "coilyco-flight-deck"
+# Every fleet repo lives under the coilyco org.
+org = "coilyco"
 
 [tool.agentic-os.documentation-layout]
 band = "small"

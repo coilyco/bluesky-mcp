@@ -5,7 +5,7 @@ description: Authenticated read-only Bluesky MCP with a fixed, bounded AT Protoc
 
 # repo-bluesky-mcp
 
-Pointer to `~/projects/coilyco-flight-deck/bluesky-mcp/`.
+Pointer to `~/projects/coilyco/bluesky-mcp/`.
 
 - [`README.md`](../../../README.md) - what it is, quickstart, layout.
 - [`AGENTS.md`](../../../AGENTS.md) - agent-facing operating context for the repo.
