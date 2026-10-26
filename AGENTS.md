@@ -1,6 +1,6 @@
 ---
 ward:
-  workflow: merge-remote-main
+  workflow: pull-request-and-merge
 ---
 # Agent instructions
 
