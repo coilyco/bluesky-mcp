@@ -55,11 +55,10 @@ actor in every action sentence.
 
 ## Release
 
-After validation, main CI publishes the private image
-`forgejo.coilysiren.me/coilyco-flight-deck/bluesky-mcp:<full-source-sha>`
-through the trusted deploy lane. The runner supplies `REGISTRY_TOKEN` for
-package writes. `coilyco-bridge/deploy` owns the separate read-only
-`forgejo-registry` pull credential and rollout.
+After validation, main CI publishes the image
+`ghcr.io/coilyco/bluesky-mcp:<full-source-sha>` with the job's `GITHUB_TOKEN`
+and `packages: write`. This repo holds no cluster credentials.
+`coilyco/deploy` owns rollout through Flux (COI-3042).
 
 ## Checkout residency
 

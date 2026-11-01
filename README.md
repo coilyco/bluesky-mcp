@@ -59,9 +59,8 @@ repository.
 
 `just lint`, `just typecheck`, `just test`, `just audit`, and `just precommit`
 are the supported validation verbs. A main-branch workflow tests and publishes
-the private image
-`forgejo.coilysiren.me/coilyco-flight-deck/bluesky-mcp:<full-source-sha>`.
-Deployment uses a separate read-only `forgejo-registry` pull credential.
+the image `ghcr.io/coilyco/bluesky-mcp:<full-source-sha>`. Rollout is Flux from
+`coilyco/deploy` (COI-3042).
 
 ## See also
 
