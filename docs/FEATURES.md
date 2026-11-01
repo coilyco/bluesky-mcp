@@ -12,10 +12,9 @@ with an app password, and exposes exactly these 11 bounded read tools:
 
 The service excludes write actions, generic network/XRPC access, record tools,
 and session tools. Credential-shaped values are removed from all tool results.
-After validation, trusted main CI publishes one private non-root image as
-`forgejo.coilysiren.me/coilyco-flight-deck/bluesky-mcp:<full-source-sha>` and
-proves its remote manifest. Deployment policy, read-only pull credentials, and
-secret mapping are owned separately. Crashes, and only crashes, also go to
+After validation, trusted main CI publishes one non-root image as
+`ghcr.io/coilyco/bluesky-mcp:<full-source-sha>` and proves its remote manifest.
+Deployment policy, pull credentials, and secret mapping are owned separately. Crashes, and only crashes, also go to
 Sentry: [crash reporting](crash-reporting.md).
 
 ## See also

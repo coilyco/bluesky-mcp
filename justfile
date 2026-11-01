@@ -43,7 +43,7 @@ precommit *ARGS:
 build-docker *ARGS:
     @docker build -t bluesky-mcp:local . "$@"
 
-# Parse the trusted Forgejo OCI publisher shell contract.
+# Parse the trusted GHCR publisher shell contract.
 image-publish-check *ARGS:
     @bash -n scripts/publish-image.sh "$@"
 
