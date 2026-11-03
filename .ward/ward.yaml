@@ -1,9 +1,5 @@
-# Catalog metadata for the cross-repo knowledge graph.
-#
-# Dev verbs used to live here as a `commands:` block. They are recipes in the
-# justfile now. This file survives only because check_catalog_block pins this
-# exact path and catalog-trifecta wants README, AGENTS, and FEATURES to link
-# it, both upstream in agentic-os.
+# Catalog metadata for the cross-repo knowledge graph, dev verbs are justfile recipes.
+# Why this file survives at this exact path: see the justfile header.
 
 catalog:
   description: "Authenticated, strictly read-only Bluesky MCP with a fixed 11-tool inventory."
